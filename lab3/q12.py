@@ -38,9 +38,15 @@ def fifth(n):
     print(sum)
 
 def sixth(n):
-    sum=0
-    for i in range(1,n+1,2):
-        sum+=(i**i)
-    print(sum)
-    
-fifth(5)
+    x=float(input(" Enter the value for x : "))
+    x=(x*math.pi)/180  #convert degree into radian
+    term=x
+    sum=x
+    i=2
+    while abs(term) >= 0.000001: # until the absolute value of the nth term is less than the desired acceptable error
+        term *= (-x*x)/((2*i-2)*(2*i-1))
+        sum=sum+term
+        i+=1
+    print("The value of Sin(x) = ",sum)
+
+sixth(n)

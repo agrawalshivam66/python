@@ -61,10 +61,53 @@ def g(n):
 def h(n):
     print("h")
     for i in range(1,n+1):
+        z=4
+        sum=i
         for j in range (1,i+1):
-            print(j,end=' ')
+            print(sum,end=' ')
+            sum=sum+z
+            z-=1
         print('')
 
+def i(n):
+    print("i")
+    for i in range(1,n+1):
+        sum=1
+        while sum<=i:
+            print(sum,end=' ')
+            sum=sum+1
+        sum=i-1
+        while sum>=1:
+            print(sum,end=' ')
+            sum=sum-1    
+        print('')
+        
+def j(n):
+    print("j")
+    for i in range(1,n+1):
+        for j in range (i,0,-1):
+            sum=i+i-j
+            print(sum,end=' ')
+        sum=0
+        print('')
+
+
+def k(n):
+    print("k")
+    d=0
+    for i in range(1,n+1):
+        for j in range (1,i+1):
+            a=0
+            b=1
+            c=1
+            for x in range(1,d+1):
+                c=a+b
+                a=b
+                b=c
+            print(c,end=' ')
+            d+=1
+        print('')
+        
 def m(n):
     print("m")
     for i in range(1,n+1):
@@ -76,11 +119,6 @@ def m(n):
             print("*",end=' ')
         print('')
 
-a(5)
-b(5)
-e(5)
-c(5)
-d(5)
-f(5)
-g(5)
-m(5)
+    
+
+k(5)
