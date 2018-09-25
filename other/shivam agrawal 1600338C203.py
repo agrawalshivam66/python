@@ -1,6 +1,16 @@
 m=[[1, 1, 1], [1, 1, 0], [1, 0, 1], [1, 0, 0], [0, 1, 0], [0, 0, 1], [0, 1, 1], [0, 0, 0]]
 dis=[[4],[2,4],[2],[0],[6],[4],[4],[2]]
+
 def decision_tree():
+    m=[[1, 1, 1], [1, 1, 0], [1, 0, 1], [1, 0, 0], [0, 1, 0], [0, 0, 1], [0, 1, 1], [0, 0, 0]]
+    dis=[[4],[2,4],[2],[0],[6],[4],[4],[2]]
+    #sorting
+    for i in range (0,len(m)):
+        for j in range(0,i):
+            if dis[i]>dis[j]:
+                dis[i],dis[j]=dis[j],dis[i]
+                m[i],m[j]=m[j],m[i]
+    #printing        
     print("Decision tree")
     print("<50\tCOD\tWhole\tDiscount")
     for i in range(0,len(m)):
