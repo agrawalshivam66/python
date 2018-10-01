@@ -18,5 +18,5 @@ def twin_prime_first():
             print("(",i,",",i+2,")",end=', ')
             c+=1
         i+=1
-    
+twin_prime()   
 twin_prime_first()
