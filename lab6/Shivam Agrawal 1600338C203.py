@@ -135,8 +135,56 @@ def seventh():
             b.append(s)
             print(s)
 seventh()
+
+#question 8
+def eight():
+    s = str(input("Enter the string "))
+    a = s.split()
+    b=dict()
+    for i in a:
+        c = a.count(i)
+        b[i]=c
+    print(b)
+eight()
+  
+
+#question 9
+def nine():
+    s = str(input("Enter the string "))
+    b=dict()
+    vow = ['a', 'e', 'i', 'o', 'u']
+    for i in vow:
+        c = s.count(i)
+        b[i]=c
+    print(b)
+nine()  
+
+# question 10
+def ten():
+    s = str(input("Enter the string "))
+    b=dict()
+    for i in s:
+        c = s.count(i)
+        b[i]=c
+    print(b)
+ten()
+
+# question 11
+def eleven():
+    s = str(input("Enter the string "))
+    import re
+    s = re.sub('[^a-zA-Z]',' ', s)#don't remove a-z and A_Z
+    print(s)
+eleven()
     
-    
-    
-    
+# question 13
+def thirteen():
+    s = str(input("Enter the string "))
+    b=[]
+    for i in s:
+        if i not in b:
+            c = s.count(i)
+            b.append(i)
+            print(i,c)
+thirteen()    
     
