@@ -86,4 +86,57 @@ def forth():
         print("The strings aren't anagrams.")          
 forth()
 
-      
+#question 5
+def reverse(a):
+    b=''
+    for i in range(len(a)-1,-1,-1):
+        b+=a[i]
+    return b
+
+def fiftha():
+    s = str(input("Enter the string "))
+    d = int(input("enter digits you want to rotate "))
+    x = reverse(s[0:d])
+    y = reverse(s[d::])
+    rev = reverse(x+y)
+    print(rev)
+fiftha()
+
+def fifthb():
+    s = str(input("Enter the string "))
+    d = int(input("enter digits you want to rotate "))
+    x = reverse(s[0:len(s)-d])
+    y = reverse(s[len(s)-d:len(s)])
+    rev = reverse(x+y)
+    print(rev)
+fifthb()
+
+
+# question 6
+def substring():
+    s1 = str(input("Enter the string "))
+    s2 = str(input("Enter the string "))
+    if s2 in s1:
+        print('Substring is in string!')
+    else:
+        print('Substring not found in string!')
+substring()
+
+
+# question 7
+def seventh():
+    s = str(input("Enter the string "))
+    b=[]
+    for i in s:
+        x = s[0]
+        s=s[1:len(s)]
+        s+=x
+        if s not in b:
+            b.append(s)
+            print(s)
+seventh()
+    
+    
+    
+    
+    
