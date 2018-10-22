@@ -176,7 +176,16 @@ def eleven():
     s = re.sub('[^a-zA-Z]',' ', s)#don't remove a-z and A_Z
     print(s)
 eleven()
-    
+
+# question 12
+def twelve():
+    s = str(input("Enter the string "))
+    a = s.split()
+    sr = sorted(a)
+    for i in sr:
+        print(i)
+twelve()
+
 # question 13
 def thirteen():
     s = str(input("Enter the string "))
