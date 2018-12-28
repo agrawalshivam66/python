@@ -49,6 +49,11 @@ n2=0
 for i in operands_present:
     n2 += operands_present.get(i)
 
+print('n1 value is ',n1)
+print('n2 value is ',n2)
+print('N1 value is ',N1)
+print('N2 value is ',N2)
+
 
 
 
